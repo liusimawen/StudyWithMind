@@ -1,0 +1,14 @@
+docker学习笔记
+1.开启虚拟机后，发现Ubuntu虚拟机无法上网。
+重启一下网络：
+sudo service network_manager stop
+sudo service network_manager start
+
+Aspnetcore部署至docker
+1.新建aspnetcore webapi demo
+2.添加docker容器支持
+3.修改dockerfile文件
+4.将项目拷贝至linux系统
+5.在项目路径下，运行docker
+6.docker build -t [image name]
+7.docker run -d -p 9090:80 --name [container name] [image name]
